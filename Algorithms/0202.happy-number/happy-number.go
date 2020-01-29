@@ -6,10 +6,7 @@ func isHappy(n int) bool {
 		slow = trans(slow)
 		fast = trans(trans(fast))
 	}
-	if slow == 1 {
-		return true
-	}
-	return false
+	return slow == 1
 }
 
 func trans(n int) int {
